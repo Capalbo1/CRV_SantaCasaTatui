@@ -1,7 +1,7 @@
 
         /* VARIÁVEIS E RESET */
         :root {
-            --primary: #0056b3;
+            --primary:  #004494;
             --secondary: #009688;
             --accent: #d32f2f;
             --light: #f8f9fa;
@@ -74,7 +74,7 @@
             display: block;
             width: 80px;
             height: 4px;
-            background: var(--secondary);
+            background: var(--primary);
             margin: 10px auto;
             border-radius: 2px;
         }
@@ -157,7 +157,7 @@
 
         /* HERO SECTION */
         .hero {
-            background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('imagem-0.png') center/cover;
+            background: linear-gradient(rgba(0, 87, 179, 0), rgba(0, 87, 179, 0)), url('imagem-0.png') center/cover;
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -166,13 +166,22 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 20px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 0 2px 4px rgb(0 0 0);
+            color: #ffffffe0;
+            background-color: #6158588a;
+            border-radius: 15px; 
+
         }
 
         .hero p {
             font-size: 1.2rem;
+            padding: 2px;
             max-width: 700px;
-            margin: 0 auto 30px;
+            margin: 0 auto 50px;
+             text-shadow: 0 2px 4px rgb(0 0 0);
+            color: #ffffffe0;
+            background-color: #6158588a;
+            border-radius: 15px; 
         }
 
         /* MAIN CONTENT */
@@ -210,6 +219,7 @@
             gap: 10px;
             margin-bottom: 20px;
             color: var(--primary);
+            justify-content: center;
         }
 
         .card-title i {
@@ -237,7 +247,7 @@
             border-radius: 50%;
             object-fit: cover;
             margin: 0 auto 15px;
-            border: 3px solid var(--secondary);
+            border: 3px solid var(--primary);
         }
 
         /* SERVICES */
@@ -402,6 +412,11 @@
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
+    .about-grid p{
+            color: var(--dark);
+            text-align: justify;
+
+        }
 
         .form-group {
             margin-bottom: 20px;
@@ -518,9 +533,9 @@
 
         /* ACCESSIBILITY */
         .accessibility-bar {
-            background: var(--dark);
+            background: var(--primary);
             color: white;
-            padding: 10px 0;
+            padding: 6px 0;
             text-align: center;
             font-size: 0.9rem;
         }
