@@ -1,0 +1,75 @@
+REQUISITOS DO SITE - HOSPITAL SANTA CASA
+
+1. ESTRUTURA GERAL:
+   - Layout responsivo (mobile, tablet, desktop)
+   - HTML semântico (tags: header, nav, main, section, article, footer, etc)
+   - Sistema de navegação acessível
+
+2. SEÇÕES OBRIGATÓRIAS:
+   a) Header:
+      - Logo do hospital
+      - Menu de navegação principal
+      - Botão de menu mobile (hamburger)
+
+   b) Home (Página Inicial):
+      - Banner principal
+      - Resumo institucional
+      - Links rápidos para seções importantes
+
+   c) Quem Somos:
+      - História da Santa Casa
+      - Missão, Visão e Valores
+      - Diretoria (cargos e nomes)
+      - Estrutura organizacional
+
+   d) Serviços:
+      - Lista de serviços médicos oferecidos
+      - Breve descrição de cada serviço
+      - Ícones ilustrativos
+
+   e) Convênios e Parcerias:
+      - Logotipos dos convênios
+      - Explicação de cada parceria
+      - Área de cobertura
+
+   f) Banco de Sangue:
+      - Informações sobre doações
+      - Requisitos para doadores
+      - Agenda de coleta
+      - Estoque sanguíneo (opcional)
+
+   g) Notícias e Eventos:
+      - Posts organizados por categorias:
+        * Eventos hospitalares
+        * Concursos e processos seletivos
+        * Notícias institucionais
+      - Sistema de filtragem por categoria
+      - Paginação
+
+   h) Portal da Transparência:
+      - Demonstrativos financeiros
+      - Licitações
+      - Relatórios de gestão
+      - Documentos institucionais (PDF)
+
+   i) Ouvidoria:
+      - Formulário de contato
+      - Canal de denúncias anônimas
+      - FAQ
+      - Informações sobre fluxo de atendimento
+
+   j) Rodapé:
+      - Contatos (endereço, telefone, email)
+      - Links úteis
+      - Redes sociais
+      - Mapa de localização
+      - Links de acessibilidade
+      - Copyright
+
+3. RECURSOS ESPECIAIS:
+   - Acessibilidade (WCAG 2.1):
+        * Alto contraste
+        * Navegação por teclado
+        * ARIA landmarks
+   - Performance otimizada
+   - SEO básico implementado
