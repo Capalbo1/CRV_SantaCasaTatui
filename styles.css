@@ -78,6 +78,15 @@
             margin: 10px auto;
             border-radius: 2px;
         }
+        #bslogo::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            margin: 10px auto;
+            border-radius: 2px;
+        }
 
         /* HEADER */
         header {
@@ -99,6 +108,17 @@
             display: flex;
             align-items: center;
             gap: 15px;
+        }
+        .blood{
+            height: 50px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .red{
+            color: var(--accent);
+            font-weight: bold;
+            
         }
 
         .logo img {
@@ -734,8 +754,5 @@
 }
 
 #bslogo{
-    height: 80px;
-    margin-bottom: 20px;
-    border: 2px solid var(--primary);
-
+    color: var(--accent);
 }
