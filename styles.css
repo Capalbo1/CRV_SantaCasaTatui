@@ -104,6 +104,14 @@
         .logo img {
             height: 80px
         }
+        .logocrv{
+            height: 120px;
+        }
+        .copyright{
+            display: flex;
+            align-items: center;
+            width: 80%;
+        }
 
         .logo-text {
             font-size: 1.8rem;
@@ -478,7 +486,7 @@
             left: 0;
             width: 50px;
             height: 2px;
-            background: var(--secondary);
+            background: var(--primary);
         }
 
         .footer-links li {
@@ -723,4 +731,11 @@
         width: 90%;
         margin: 10% auto;
     }
+}
+
+#bslogo{
+    height: 80px;
+    margin-bottom: 20px;
+    border: 2px solid var(--primary);
+
 }
