@@ -220,39 +220,44 @@
         section:nth-child(even) {
             background-color: #f8f9fa;
         }
+/* GRID com 6 colunas fixas */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
 
-        /* ABOUT SECTION */
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
+/* Cada card ocupa 2 colunas (3 por linha) */
+.about-grid article {
+  grid-column: span 2;
+  transition: all 0.5s ease;
+}
 
-        .history-card, .mission-card, .values-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            padding: 30px;
-            transition: var(--transition);
-        }
+/* Card expandido ocupa 5 colunas */
+.about-grid article.expanded {
+  grid-column: span 5;
+}
 
-        .history-card:hover, .mission-card:hover, .values-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
+/* Texto limitado por padrão */
+.mission-card p,
+.history-card p,
+.values-card p,
+.mission-card ul,
+.values-card ul {
+  max-height: 186px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
 
-        .card-title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            color: var(--primary);
-            justify-content: center;
-        }
+/* Texto liberado no expandido */
+.mission-card.expanded p,
+.history-card.expanded p,
+.values-card.expanded p,
+.mission-card.expanded ul,
+.values-card.expanded ul {
+  max-height: 2000px; /* libera tudo */
+}
 
-        .card-title i {
-            font-size: 1.8rem;
-        }
 
         /* DIRECTORS */
         .directors-grid {
@@ -347,7 +352,7 @@
         .news-image {
             height: 200px;
             width: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .news-content {
@@ -416,7 +421,7 @@
         .document-card {
             background: white;
             border-radius: 8px;
-            padding: 25px;
+            padding: 15px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
@@ -756,3 +761,96 @@
 #bslogo{
     color: var(--accent);
 }
+
+
+  .documents-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    margin-top: 0;
+    padding: 0 10px;
+    border-top: 1px solid transparent;
+    text-align: left;
+  }
+
+  /* Links */
+  .documents-list a {
+    display: block;
+    margin: 6px 0;
+    color: #0077cc;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .documents-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* Ativo */
+  .document-card.active .documents-list {
+    max-height: 800px;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .document-card.active .documents-list a {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Botão principal */
+  .btn.toggle-btn {
+    margin-top: 15px;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .btn.toggle-btn:hover {
+    background: #005fa3;
+  }
+
+  /* Subpastas */
+  .sub-folder {
+    margin-top: 10px;
+  }
+
+  .sub-toggle {
+    background: none;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+    transition: color 0.3s;
+  }
+
+  .sub-toggle:hover {
+    color: #0077cc;
+  }
+
+  .sub-documents {
+    max-height: 0;
+    overflow: hidden;
+    margin-left: 15px;
+    transition: max-height 0.3s ease;
+  }
+
+  .sub-folder.active .sub-documents {
+    max-height: 400px;
+  }
+
+  .sub-folder.active .sub-documents a {
+    opacity: 1;
+    transform: translateY(0);
+  }

@@ -53,3 +53,28 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".saiba-mais-btn");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const card = btn.closest("article");
+      card.classList.toggle("expanded");
+
+      // altera texto do botão
+      const link = btn.querySelector("a");
+      if (card.classList.contains("expanded")) {
+        link.innerHTML = '<i class="fas fa-arrow-up"></i> Recolher';
+      } else {
+        link.innerHTML = '<i class="fas fa-arrow-right"></i> Saiba mais';
+      }
+    });
+  });
+});
+
+
