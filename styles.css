@@ -185,7 +185,7 @@
 
         /* HERO SECTION */
         .hero {
-            background: linear-gradient(rgba(0, 87, 179, 0), rgba(0, 87, 179, 0)), url('assets/img/logo/maternidade.png') center/cover;
+            background: linear-gradient(rgb(96 148 203), rgb(5 50 98 / 58%)), url(assets/img/logo/maternidade.png) center / cover;
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -195,8 +195,7 @@
             font-size: 3rem;
             margin-bottom: 20px;
             text-shadow: 0 2px 4px rgb(0 0 0);
-            color: #ffffffe0;
-            background-color: #6158588a;
+            color: #ffffff;
             border-radius: 15px; 
 
         }
@@ -207,8 +206,7 @@
             max-width: 700px;
             margin: 0 auto 50px;
              text-shadow: 0 2px 4px rgb(0 0 0);
-            color: #ffffffe0;
-            background-color: #6158588a;
+            color: #ffffff;
             border-radius: 15px; 
         }
 
