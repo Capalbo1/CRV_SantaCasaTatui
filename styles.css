@@ -788,7 +788,7 @@
 
   /* Ativo */
   .document-card.active .documents-list {
-    max-height: 800px;
+    max-height: 100%;
     margin-top: 10px;
     padding: 10px;
     border-top: 1px solid #ddd;
@@ -852,3 +852,139 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+
+
+
+
+
+
+
+
+
+   .description {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .folder-structure {
+            padding: 1.5rem;
+        }
+        
+        .convenio-folder {
+            margin-bottom: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .convenio-toggle {
+            background: linear-gradient(90deg, #2783ae, #123852);
+            color: white;
+            width: 100%;
+            padding: 0.5rem;
+            text-align: left;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        
+        .convenio-toggle:hover {
+            background: linear-gradient(90deg, #216196, #1d7ac7);
+        }
+        
+        .convenio-content {
+            display: none;
+            padding: 0.5rem 1rem;
+            background-color: #f8f9fa;
+        }
+        
+        .year-folder {
+            margin: 0.8rem 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .year-toggle {
+            background-color: #74b9ff;
+            color: white;
+            width: 100%;
+            padding: 0.8rem;
+            text-align: left;
+            border: none;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        
+        .year-toggle:hover {
+            background-color: #0984e3;
+        }
+        
+        .year-content {
+            display: none;
+            padding: 0.8rem;
+            background-color: #fff;
+        }
+        
+        .year-content a {
+            display: block;
+            padding: 0.6rem;
+            color: #2d3436;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+        
+        .year-content a:hover {
+            background-color: #f8f9fa;
+            color: #0984e3;
+        }
+        
+        .year-content a:last-child {
+            border-bottom: none;
+        }
+        
+        .icon {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .instructions {
+            margin-top: 2rem;
+            text-align: center;
+            color: #636e72;
+            max-width: 800px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                border-radius: 8px;
+            }
+            
+            header {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .folder-structure {
+                padding: 1rem;
+            }
+        }

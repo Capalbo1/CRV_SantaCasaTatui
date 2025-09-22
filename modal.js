@@ -78,3 +78,46 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+ document.addEventListener('DOMContentLoaded', function() {
+            // Adiciona evento de clique para os convênios
+            const convenioToggles = document.querySelectorAll('.convenio-toggle');
+            convenioToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.toggle-icon');
+                    
+                    // Alterna a exibição do conteúdo do convênio
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        icon.textContent = '▼';
+                    } else {
+                        content.style.display = 'block';
+                        icon.textContent = '▲';
+                    }
+                });
+            });
+            
+            // Adiciona evento de clique para os anos
+            const yearToggles = document.querySelectorAll('.year-toggle');
+            yearToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.toggle-icon');
+                    
+                    // Alterna a exibição do conteúdo do ano
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        icon.textContent = '▼';
+                    } else {
+                        content.style.display = 'block';
+                        icon.textContent = '▲';
+                    }
+                });
+            });
+            
+            // Abre o primeiro convênio por padrão
+            convenioToggles[0].click();
+            // Abre o primeiro ano do primeiro convênio
+            document.querySelector('.convenio-content .year-toggle').click();
+        });
+
